@@ -213,7 +213,8 @@ https://github.com/yiyupan/Linux-Server-Configuration-Udacity-Full-Stack-Nanodeg
 7.  Change file application.py to init.py: \$ mv application.py **init**.py
 8.  Change line app.run(host='0.0.0.0', port=8000) to app.run() in init.py file
 9.  database_setup.py replace:
-    # engine = create_engine("sqlite:///catalog.db")
+    
+    #engine = create_engine("sqlite:///catalog.db")
     engine = create_engine('postgresql+psycopg2://postgres:PASSWORD@localhost/catalog')
 10. Run: `python data.py` This will populate the database and table
 
