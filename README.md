@@ -204,19 +204,17 @@ https://github.com/yiyupan/Linux-Server-Configuration-Udacity-Full-Stack-Nanodeg
 
 #11: Install git and copy catalog application from github to AWS (from grader)
 
-1.  Run \$ sudo apt-get install git
-2.  Create dictionary: \$ mkdir /var/www/catalog
-3.  CD to this directory: \$ cd /var/www/catalog
-4.  Clone the catalog app: \$ sudo git clone RELEVENT-URL catalog
-5.  Change the ownership: \$ sudo chown -R ubuntu:ubuntu catalog/
-6.  CD to /var/www/catalog/catalog
-7.  Change file application.py to init.py: \$ mv application.py **init**.py
-8.  Change line app.run(host='0.0.0.0', port=8000) to app.run() in init.py file
-9.  database_setup.py replace:
-    
-    #engine = create_engine("sqlite:///catalog.db")
+1.  sudo apt-get install git "this will install git"
+2.  mkdir /var/www/catalog "create dictionary"
+3.  cd /var/www/catalog "change directory"
+4.  sudo git clone https://github.com/zbekele/AWS_Final_Project.git catalog "Clone the catalog"
+5.  sudo chown -R ubuntu:ubuntu catalog/ "Change the ownership"
+6.  cd /var/www/catalog/catalog "change directory"
+7.  Change line app.run(host='0.0.0.0', port=8000) to app.run() in init.py file
+8.  database_setup.py replace:
+    # engine = create_engine("sqlite:///catalog.db")
     engine = create_engine('postgresql+psycopg2://postgres:PASSWORD@localhost/catalog')
-10. Run: `python data.py` This will populate the database and table
+9.  Run: `database_setup.py` This will populate the database and table
 
 #Reference
 
