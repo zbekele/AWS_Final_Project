@@ -1,4 +1,4 @@
-############################ Webcasts for the Linux Server Configuration Project #############################
+################## AWS Linux Server Configuration Project #############################
 
 About the project:
 This tutorial will guide you through the steps to take a baseline installation of a Linux server and prepare it to host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing Flask-based Web applications onto it.
