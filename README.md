@@ -5,14 +5,6 @@ This tutorial will guide you through the steps to take a baseline installation o
 
 ############## Grader Login infrormation ##############
 
-- User: grader
-- Password: zele
-- URL: http://3.214.89.141.xip.io
-- ssh port 2200
-- ssh -i ~/.ssh/key_for_grader -p 2200 grader@3.214.89.141
-
-sudo apt-get update && sudo apt-get dist-upgrade
-
 #01: Working with Amazon Lightsail AWS Instances
 
 AWS (Amazon Web Services) Lightsail is a cloud computing service that you can use to host web applications and website. AWS service is one of the requirements for this project.  
