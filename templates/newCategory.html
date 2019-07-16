@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="container" style="background-color:#FFF;">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Add New Category</h2>
+			<form action="#" method = "post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="100" class="form-control" name="name" placeholder="Name of the new category" required>
+					
+					<br>
+        			<button type="submit" class="btn btn-labeled btn-success" id="submit" type="submit">
+						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>Save
+					</button>
+
+
+        			<button type="button" class="btn btn-labeled btn-danger">
+                	<span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span><a href = '{{url_for('showCatalog')}}'>Cancel</a></button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+{% endblock %}

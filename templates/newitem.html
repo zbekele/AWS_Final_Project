@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="container" style="background-color:#FFF;">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Please add new item</h2>
+			<form action="#" method = "post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="100" class="form-control" name="name" placeholder="Name of the item" required><br>
+
+					<label for="course">Category:</label>
+					<select class="form-control" name="category">
+						{% for category in categories %}
+						<option>{{ category.name }}</option>
+						{% endfor %}
+					</select><br>
+
+					<label for="description">Description:</label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description"></textarea><br>
+
+    				<label for="price">Price:</label>
+    				<div class="input-group">
+        				<span class="input-group-addon">$</span>
+        				<input type="text" class="form-control" name="price" value="">
+        			</div><br>
+
+
+        			<button type="submit" class="btn btn-labeled btn-success" id="submit" type="submit">
+						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>Save
+					</button>
+
+
+        			<button type="button" class="btn btn-labeled btn-danger">
+                	<span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span><a href = '{{url_for('showCatalog')}}'>Cancel</a></button>
+
+
+				</div>
+			</form>
+
+
+		</div>
+		</div>
+	</div>
+{% endblock %}
