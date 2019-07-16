@@ -303,3 +303,10 @@ sudo pip install psycopg2
 - Change the ownership of the project directories: `sudo chown -R www-data:www-data catalog/`.
 - Restart Apache again: `sudo service apache2 restart`.
 - Open your browser to http://3.214.89.141.xip.io
+
+Sources:
+Amazon Lightsail Website: https://aws.amazon.com/lightsail/
+Google API Concole: https://console.developers.google.com
+postgresql: https://www.postgresql.org/
+Apache: https://httpd.apache.org/
+
